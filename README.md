@@ -67,7 +67,7 @@ word2&lt;TAB&gt;tag2
 word3&lt;TAB&gt;tag3
 
 word4&lt;TAB&gt;tag4
- 
+ +
 
 word5&lt;TAB&gt;tag5
 
@@ -75,7 +75,7 @@ word6&lt;TAB&gt;tag6
 
 word7&lt;TAB&gt;tag7
 
-word8&lt;TAB&g&ltt;tag8
+word8&lt;TAB&gt;tag8
 
 word9&lt;TAB&gt;tag9
 
