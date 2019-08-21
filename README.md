@@ -74,38 +74,39 @@ word6&lt;TAB&gt;tag6
 
 An example sentence from Hindi is shown here.
 
-इसके	PRON|Case=Acc,Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs
+इसके&lt;TAB&gt;PRON|Case=Acc,Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs
 
-अतिरिक्त	ADP|AdpType=Post
+अतिरिक्त&lt;TAB&gt;ADP|AdpType=Post
 
-गुग्गुल	PROPN|Case=Nom|Gender=Masc|Number=Sing|Person=3
+गुग्गुल&lt;TAB&gt;PROPN|Case=Nom|Gender=Masc|Number=Sing|Person=3
 
-कुंड	PROPN|Case=Nom|Gender=Masc|Number=Sing|Person=3
+कुंड&lt;TAB&gt;PROPN|Case=Nom|Gender=Masc|Number=Sing|Person=3
 
-,	PUNCT
+,&lt;TAB&gt;PUNCT
 
-भीम	PROPN|Case=Nom|Gender=Masc|Number=Sing|Person=3
+भीम&lt;TAB&gt;PROPN|Case=Nom|Gender=Masc|Number=Sing|Person=3
 
-गुफा	PROPN|Case=Nom|Gender=Fem|Number=Sing|Person=3
+गुफा&lt;TAB&gt;PROPN|Case=Nom|Gender=Fem|Number=Sing|Person=3
 
-तथा	CCONJ
+तथा&lt;TAB&gt;CCONJ
 
-भीमशिला	PROPN|Case=Nom|Gender=Fem|Number=Sing|Person=3
+भीमशिला&lt;TAB&gt;PROPN|Case=Nom|Gender=Fem|Number=Sing|Person=3
 
-भी	PART
+भी&lt;TAB&gt;PART
 
-दर्शनीय	ADJ|Case=Nom
+दर्शनीय&lt;TAB&gt;ADJ|Case=Nom
 
-स्थल	NOUN|Case=Nom|Gender=Masc|Number=Plur|Person=3
+स्थल&lt;TAB&gt;NOUN|Case=Nom|Gender=Masc|Number=Plur|Person=3
 
-हैं	AUX|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act
+हैं&lt;TAB&gt;AUX|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act
 
-।	PUNCT
+।&lt;TAB&gt;PUNCT
 
 *Note that in our experiments we use universal dependencies datasets. As a preprocessing, we join the 4th and the 6th columns together which represents the tag of a word.*
 
-Test file and development file format:
+********************************************************************************************
 
+Test file and development file format:
 
 In the test/dev file, after each sentence, there should be a new line gap. The format is like below:
 
@@ -122,6 +123,8 @@ word3
 word4
 
 word5
+
+*****************************************************************************************
 
 For our experiments, we explored 5 Indic languages from 2 different families - 1. Indo-Aryan (Hindi, Marathi, Sanskrit) 2. Dravidian (Tamil and Telugu). Additionally we included 2 other severely resource-scarce languages namely Coptic and Kurmanji. The codes given here are generic so that they can be used for training and testing on any arbitrary language.
 
