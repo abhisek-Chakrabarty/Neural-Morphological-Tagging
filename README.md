@@ -68,7 +68,7 @@ word3&lt;TAB&gt;tag3
 
 word4&lt;TAB&gt;tag4
  
-
+{empty} +
 word5&lt;TAB&gt;tag5
 
 word6&lt;TAB&gt;tag6
