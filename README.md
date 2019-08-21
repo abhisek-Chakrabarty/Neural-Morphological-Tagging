@@ -68,18 +68,9 @@ word3&lt;TAB&gt;tag3
 
 word4&lt;TAB&gt;tag4
  
-<tr>
-</tr>
-
 word5&lt;TAB&gt;tag5
 
 word6&lt;TAB&gt;tag6
-
-word7&lt;TAB&gt;tag7
-
-word8&lt;TAB&gt;tag8
-
-word9&lt;TAB&gt;tag9
 
 An example sentence from Hindi is shown here.
 
@@ -131,15 +122,6 @@ word3
 word4
 
 word5
-
-
-word6
-
-word7
-
-word8
-
-word9
 
 For our experiments, we explored 5 Indic languages from 2 different families - 1. Indo-Aryan (Hindi, Marathi, Sanskrit) 2. Dravidian (Tamil and Telugu). Additionally we included 2 other severely resource-scarce languages namely Coptic and Kurmanji. The codes given here are generic so that they can be used for training and testing on any arbitrary language.
 
