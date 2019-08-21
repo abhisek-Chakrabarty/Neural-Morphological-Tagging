@@ -62,23 +62,23 @@ The format of the train file is like below:
 
 word1&lt;TAB&gt;tag1
 
-word2;TAB&gt;tag2
+word2&lt;TAB&gt;tag2
 
-word3;TAB&gt;tag3
+word3&lt;TAB&gt;tag3
 
-word4;TAB&gt;tag4
+word4&lt;TAB&gt;tag4
 <br/>
+ +
 
+word5&lt;TAB&gt;tag5
 
-word5;TAB&gt;tag5
+word6&lt;TAB&gt;tag6
 
-word6;TAB&gt;tag6
+word7&lt;TAB&gt;tag7
 
-word7;TAB&gt;tag7
+word8&lt;TAB&g&ltt;tag8
 
-word8;TAB&gt;tag8
-
-word9;TAB&gt;tag9
+word9&lt;TAB&gt;tag9
 
 An example sentence from Hindi is shown here.
 
