@@ -102,7 +102,7 @@ An example sentence from Hindi is shown here.
 
 ।	PUNCT
 
-!! Note that in our experiments we use universal dependencies datasets. As a preprocessing, we join the 4th and the 6th columns together which represents the tag of a word. __
+*Note that in our experiments we use universal dependencies datasets. As a preprocessing, we join the 4th and the 6th columns together which represents the tag of a word.*
 
 Test file and development file format:
 
