@@ -1,5 +1,5 @@
 # Neural-Morphological-Tagging
-===============================
+
 This repository contains the code of character-level neural morphological tagging for two models - BLSTM-BLSTM and BLSTM-CNN. For each of the models, 3 different learning setups are there. They are as follows.
 
 1. Single-language-setting.
