@@ -22,6 +22,7 @@ For each of the learning setups, the following files are present in the correspo
 6. parameters
 
 When you just want to train the model on the training set, run the following command,
+
 python main.py parameters <train-file>
 
 If you want to train the model on the training-set and test it on the test-set in a pipeline, run the following command,
