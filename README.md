@@ -12,7 +12,7 @@ In Learning-across-keys setup, the model is trained and tested on a single langu
 
 In Across-languages-setting, multilingual training is done on similar languages.
 
-For each of the learning setups, the following files are present in the corresponding directories. Place your data files i.e. train, dev and test files in the same place where the codes are there.
+For each of the learning setups, the following files are present in the corresponding directories.
 
 1. main.py
 2. models.py
@@ -20,6 +20,8 @@ For each of the learning setups, the following files are present in the correspo
 4. preprocessing.py
 5. f_measure_accuracy.py
 6. parameters
+
+Place your data files i.e. train, dev and test files in the same place where the codes are there.
 
 When you just want to train the model on the training set, run the following command,
 
