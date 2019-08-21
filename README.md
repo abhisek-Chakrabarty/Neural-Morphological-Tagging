@@ -52,8 +52,9 @@ The seventh line should be the batch size for training of the network.
 
 The eighth line is the divide file factor. For large size data, creating the data matrices which will be generated while running the code, takes too much time. To reduce the time, we fragment the matrices part-by-part and then dump them in the disk and reload part-by-part. For our experiments we kept this value as 2000. It's user's choice to set this value. Normally set this value in terms of thousands i.e. 1000/2000/3000.
 
+For each of the 3 different learning setups of BLSTM-BLSTM and BLSTM-CNN, the syntax of the &lt;parameters&gt; files are given in the individual "ReadMe" files in the corresponding directories. Note that for different languages, the values of the hyperparameters should be different i.e. you have to change/tune the values to get the optimum models.
+
 *********************************************************************************************
-For each of the 3 different learning setups of BLSTM-BLSTM and BLSTM-CNN, the syntax of the <parameters> files are given in the individual "ReadMe" files in the corresponding directories. Note that for different languages, the values of the hyperparameters should be different i.e. you have to change/tune the values to get the optimum models.
 
 Training file format: - In the training file, words and their respecive morpholgical tags should be TAB separated. 
 After each sentence, there should be a new line gap. 
