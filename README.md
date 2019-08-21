@@ -31,7 +31,7 @@ The tagging output for the <test-file> will be <test-file>-output.
 
 <parameters> file contains the value of the model hyperparameters. For example, in the Single-language-setting of the BLSTM-BLSTM model, the value in the <parameters> file is as follows.
   
-The first line should be the cell type of the character level network. It should be BLSTM.\\
+The first line should be the cell type of the character level network. It should be BLSTM.\n
 The second line should be the maximum word length in number of characters. For the words having number of characters more than this value, the excess characters will be truncated out. In our experiments, We set this to 25, but you can vary it with different values to check the model's performance.
 The third line should be the number of neurons in the cell of the character level network.
 The fourth line should be the cell type of the tag-classification network. It should be BLSTM.
