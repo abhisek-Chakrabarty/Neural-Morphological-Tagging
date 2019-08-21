@@ -26,11 +26,11 @@ When you just want to train the model on the training set, run the following com
 python main.py parameters &lt;train-file&gt;
 
 If you want to train the model on the training-set and test it on the test-set in a pipeline, run the following command,
-python main.py parameters &lt;train-file%gt; &lt;test-file&gt;
+python main.py parameters &lt;train-file&gt; &lt;test-file&gt;
 
-The tagging output for the <test-file> will be <test-file>-output.
+The tagging output for the &lt;test-file&gt; will be &lt;test-file&gt;-output.
 
-<parameters> file contains the value of the model hyperparameters. For example, in the Single-language-setting of the BLSTM-BLSTM model, the value in the <parameters> file is as follows.
+parameters file contains the value of the model hyperparameters. For example, in the Single-language-setting of the BLSTM-BLSTM model, the value in the parameters file is as follows.
   
 *********************************************************************************************
 
