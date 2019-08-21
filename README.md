@@ -2,7 +2,7 @@
 ===============================
 This repository contains the code of character-level neural morphological tagging for two models - BLSTM-BLSTM and BLSTM-CNN. For each of the models, 3 different learning setups are there. They are as follows.
 
-1. &lt;Single-language-setting.&gt;
+1. Single-language-setting.
 2. Learning-across-keys.
 3. Across-languages-setting.
 
@@ -23,10 +23,10 @@ For each of the learning setups, the following files are present in the correspo
 
 When you just want to train the model on the training set, run the following command,
 
-python main.py parameters <train-file>
+python main.py parameters &lt;train-file&gt;
 
 If you want to train the model on the training-set and test it on the test-set in a pipeline, run the following command,
-python main.py parameters <train-file> <test-file>
+python main.py parameters &lt;train-file%gt; &lt;test-file&gt;
 
 The tagging output for the <test-file> will be <test-file>-output.
 
