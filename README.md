@@ -16,8 +16,10 @@ In our experiments, we explored 5 Indic languages from 2 different families - 1.
 # Requirements:
 ======================
 
-Python 2
+Python 2.7
+
 Keras 1
+
 (However, to run the codes for Python 3 and Keras 2, name of some functions should be changed).
 
 
