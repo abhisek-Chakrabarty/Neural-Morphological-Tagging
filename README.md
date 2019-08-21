@@ -52,7 +52,7 @@ The seventh line should be the batch size for training of the network.
 
 The eighth line is the divide file factor. For large size data, creating the data matrices which will be generated while running the code, takes too much time. To reduce the time, we fragment the matrices part-by-part and then dump them in the disk and reload part-by-part. For our experiments we kept this value as 2000. It's user's choice to set this value. Normally set this value in terms of thousands i.e. 1000/2000/3000.
 
-For each of the 3 different learning setups of BLSTM-BLSTM and BLSTM-CNN, the syntax of the &lt;parameters&gt; files are given in the individual "ReadMe" files in the corresponding directories. Note that for different languages, the values of the hyperparameters should be different i.e. you have to change/tune the values to get the optimum models.
+For each of the 3 different learning setups of BLSTM-BLSTM and BLSTM-CNN, the syntax of the parameters files are given in the individual "ReadMe" files in the corresponding directories. Note that for different languages, the values of the hyperparameters should be different i.e. you have to change/tune the values to get the optimum models.
 
 *********************************************************************************************
 
@@ -61,36 +61,57 @@ After each sentence, there should be a new line gap.
 The format of the train file is like below:
 
 word1	tag1
+
 word2	tag2
+
 word3	tag3
+
 word4	tag4
 
+
 word5	tag5
+
 word6	tag6
+
 word7	tag7
+
 word8	tag8
+
 word9	tag9
 
 An example sentence from Hindi is shown here.
 
 इसके	PRON|Case=Acc,Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs
+
 अतिरिक्त	ADP|AdpType=Post
+
 गुग्गुल	PROPN|Case=Nom|Gender=Masc|Number=Sing|Person=3
+
 कुंड	PROPN|Case=Nom|Gender=Masc|Number=Sing|Person=3
+
 ,	PUNCT
+
 भीम	PROPN|Case=Nom|Gender=Masc|Number=Sing|Person=3
+
 गुफा	PROPN|Case=Nom|Gender=Fem|Number=Sing|Person=3
+
 तथा	CCONJ
+
 भीमशिला	PROPN|Case=Nom|Gender=Fem|Number=Sing|Person=3
+
 भी	PART
+
 दर्शनीय	ADJ|Case=Nom
+
 स्थल	NOUN|Case=Nom|Gender=Masc|Number=Plur|Person=3
+
 हैं	AUX|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act
+
 ।	PUNCT
 
 Note that in our experiments we use universal dependencies datasets. As a preprocessing, we join the 4th and the 6th columns together which represents the tag of a word.
 
-Test file and development file format: 
+Test file and development file format:
 
 
 In the test/dev file, after each sentence, there should be a new line gap. The format is like below:
@@ -100,14 +121,22 @@ Case 1. If you want to evaluate the trained model's performance against the test
 Case 2. If you just want to get the tagged output for the test set and don't want to evaluate the trained model on the test set, then keep the words aligned per line. After each sentence, there should be a new line gap. The format is like below:
 
 word1
+
 word2
+
 word3
+
 word4
 
 word5
+
+
 word6
+
 word7
+
 word8
+
 word9
 
 For our experiments, we explored 5 Indic languages from 2 different families - 1. Indo-Aryan (Hindi, Marathi, Sanskrit) 2. Dravidian (Tamil and Telugu). Additionally we included 2 other severely resource-scarce languages namely Coptic and Kurmanji. The codes given here are generic so that they can be used for training and testing on any arbitrary language.
