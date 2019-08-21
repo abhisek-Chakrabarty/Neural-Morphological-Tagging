@@ -1,4 +1,5 @@
 # Neural-Morphological-Tagging
+===============================
 This repository contains the code of character-level neural morphological tagging for two models - BLSTM-BLSTM and BLSTM-CNN. For each of the models, 3 different learning setups are there. They are as follows.
 
 1. Single-language-setting.
@@ -11,24 +12,22 @@ In Learning-across-keys setup, the model is trained and tested on a single langu
 
 In Across-languages-setting, multilingual training is done on similar languages.
 
-For each of the learning setups, the following files are present in the corresponding directories.
+For each of the learning setups, the following files are present in the corresponding directories. Place your data files i.e. train, dev and test files in the same place where the codes are there.
 
 1. main.py
-
 2. models.py
-
 3. load_data.py
+4. preprocessing.py
+5. f_measure_accuracy.py
+6. parameters
 
-For our experiments, we explored 5 Indic languages from 2 different families - 1. Indo-Aryan (Hindi, Marathi, Sanskrit) 2. Dravidian (Tamil and Telugu). Additionally we included 2 other severely resource-scarce languages namely Coptic and Kurmanji. The codes given here are generic so that they can be used for training and testing on any arbitrary language.
+When you just want to train the model on the training set, run the following command,
+python main.py parameters train-file
 
-# Requirements:
-======================
+If you want to train the model on the training-set and test it on the test-set in a pipeline, run the following command,
+python main.py parameters train-file test-file
 
-Python 2.7
-
-Keras 1
-
-(However, to run the codes for Python 3 and Keras 2, name of some functions should be changed).
+In the parameters file, the value of the hyperparameters should be there.
 
 Training file format: - In the training file, words and their respecive morpholgical tags should be tab separated. 
 After each sentence, there should be a new line gap. 
@@ -62,7 +61,7 @@ An example sentence from Hindi is shown here.
 हैं	AUX|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act
 ।	PUNCT
 
-Note that in our experiments we use universal dependencies datasets. For preprocessing, we join the 4th and the 6th columns together which represents the tag of a word.
+Note that in our experiments we use universal dependencies datasets. As a preprocessing, we join the 4th and the 6th columns together which represents the tag of a word.
 
 Test file and development file format: In the test/dev file, after each sentence, there should be a new line gap. The format is like below:
 
@@ -76,6 +75,17 @@ word6
 word7
 word8
 word9
+
+For our experiments, we explored 5 Indic languages from 2 different families - 1. Indo-Aryan (Hindi, Marathi, Sanskrit) 2. Dravidian (Tamil and Telugu). Additionally we included 2 other severely resource-scarce languages namely Coptic and Kurmanji. The codes given here are generic so that they can be used for training and testing on any arbitrary language.
+
+# Requirements:
+======================
+
+Python 2.7
+
+Keras 1
+
+(However, to run the codes for Python 3 and Keras 2, name of some functions should be changed).
 
 
 
