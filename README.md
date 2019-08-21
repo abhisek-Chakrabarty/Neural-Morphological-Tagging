@@ -11,7 +11,7 @@ In Learning-across-keys setup, the model is trained and tested on a single langu
 
 In Across-languages-setting, multilingual training is done on similar languages.
 
-In our experiments, we explored 5 Indic languages from 2 different families - 1. Indo-Aryan (Hindi, Marathi, Sanskrit) 2. Dravidian (Tamil and Telugu). Additionally we included 2 other severely resource-scarce languages namely Coptic and Kurmanji. The codes given here are generic so that they can be used for training and testing on any arbitrary language.
+For our experiments, we explored 5 Indic languages from 2 different families - 1. Indo-Aryan (Hindi, Marathi, Sanskrit) 2. Dravidian (Tamil and Telugu). Additionally we included 2 other severely resource-scarce languages namely Coptic and Kurmanji. The codes given here are generic so that they can be used for training and testing on any arbitrary language.
 
 # Requirements:
 ======================
