@@ -60,24 +60,25 @@ Training file format: - In the training file, words and their respecive morpholg
 After each sentence, there should be a new line gap. 
 The format of the train file is like below:
 
-word1	tag1
+word1&lt;TAB&gt;tag1
 
-word2	tag2
+word2;TAB&gt;tag2
 
-word3	tag3
+word3;TAB&gt;tag3
 
-word4	tag4
+word4;TAB&gt;tag4
 
 
-word5	tag5
 
-word6	tag6
+word5;TAB&gt;tag5
 
-word7	tag7
+word6;TAB&gt;tag6
 
-word8	tag8
+word7;TAB&gt;tag7
 
-word9	tag9
+word8;TAB&gt;tag8
+
+word9;TAB&gt;tag9
 
 An example sentence from Hindi is shown here.
 
