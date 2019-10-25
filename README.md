@@ -31,7 +31,7 @@ If you want to train the model on the training-set and test it on the test-set i
 
 python main.py parameters &lt;train-file&gt; &lt;test-file&gt;
 
-The tagging output for the &lt;test-file&gt; will be &lt;test-file&gt;-output.
+The tagging output for the &lt;test-file&gt; will be &lt;test-file&gt;_output.
 
 *********************************************************************************************
 
