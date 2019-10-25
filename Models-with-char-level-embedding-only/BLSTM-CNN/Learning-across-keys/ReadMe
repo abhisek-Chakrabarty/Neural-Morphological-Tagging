@@ -1,0 +1,90 @@
+Requirements:
+======================
+
+Python 2.7 and above
+Keras 1
+
+
+Training file format: - In the training file, words and their respecive morpholgical tags should be tab separated. 
+After each sentence, there should be a new line. 
+The format of the train file is like below:
+
+word1	tag1
+word2	tag2
+word3	tag3
+word4	tag4
+
+word5	tag5
+word6	tag6
+word7	tag7
+word8	tag8
+word9	tag9
+
+An example sentence from Hindi is shown here.
+
+इसके	PRON|Case=Acc,Gen|Number=Sing|Person=3|Poss=Yes|PronType=Prs
+अतिरिक्त	ADP|AdpType=Post
+गुग्गुल	PROPN|Case=Nom|Gender=Masc|Number=Sing|Person=3
+कुंड	PROPN|Case=Nom|Gender=Masc|Number=Sing|Person=3
+,	PUNCT
+भीम	PROPN|Case=Nom|Gender=Masc|Number=Sing|Person=3
+गुफा	PROPN|Case=Nom|Gender=Fem|Number=Sing|Person=3
+तथा	CCONJ
+भीमशिला	PROPN|Case=Nom|Gender=Fem|Number=Sing|Person=3
+भी	PART
+दर्शनीय	ADJ|Case=Nom
+स्थल	NOUN|Case=Nom|Gender=Masc|Number=Plur|Person=3
+हैं	AUX|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act
+।	PUNCT
+
+Note that in our experiments we use universal dependencies datasets. For preprocessing, we join the 4th and the 6th columns together which represents the tag of a word.
+
+Test file and development file format: In the test/dev file, after each sentence, there should be a new line. The format is like below:
+
+word1
+word2
+word3
+word4
+
+word5
+word6
+word7
+word8
+word9
+
+Learning-across-keys:
+=========================
+Learning is done across universal morphological keys on monolingual data. The value of the hyper-parameters are stored in the "parameters" file.
+
+In BLSTM-CNN model, the values in the parameter file denote the follwoing:
+
+The first line should be the cell type of the character level network. It should be BLSTM.
+The second line should be the maximum word length in number of characters. For the words having number of characters more than this value, the excess characters will be truncated out. In our experiments, We set this to 25.
+The third line should be the number of neurons in the cell of the character level network.
+The fourth line should be the number of epochs for training of the network.
+The fifth line should be the batch size for training of the network.
+The sixth line should be the number of kernels/filters used in CNN. In our experiments, we set it to 500.
+The seventh line should be the local context length of CNN.
+The eighth line is the divide file factor. For large size data, creating the data matrices which will be generated while running the code, takes too much time. To reduce the time, we fragment the matrices part-by-part and then dump them in the disk and reload part-by-part. For our experiments we kept this value as 2000. It's user's choice to set this value. Normally set this value in terms of thousands i.e. 1000/2000/3000.
+
+
+How to run the code:
+
+Place all python files (main.py, preprocessing.py, models.py, load_data.py, f_measure_accuracy.py), parameters file, train file, test file in the same directory.
+
+To train a model run the following command in gnu terminal.
+
+python main.py parameters train-file
+
+For prediction, run the following command in gnu terminal.
+
+python main.py parameters train-file test-file
+
+Output will be saved in test-file_output
+
+To evaluate the accuracy of a trained model on a test set, run the following command in gnu terminal.
+
+python main.py parameters train-file test-file
+
+Here the format of the test file is same as the train file i.e. words and their gold tags are TAB separated. After each sentence, there is a line gap.
+
