@@ -28,6 +28,7 @@ When you just want to train the model on the training set, run the following com
 python main.py parameters &lt;train-file&gt;
 
 If you want to train the model on the training-set and test it on the test-set in a pipeline, run the following command,
+
 python main.py parameters &lt;train-file&gt; &lt;test-file&gt;
 
 The tagging output for the &lt;test-file&gt; will be &lt;test-file&gt;-output.
