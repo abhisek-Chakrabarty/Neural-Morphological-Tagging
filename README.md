@@ -146,4 +146,4 @@ Keras 1
 
 If you use the codes, please cite the following paper.
 
-"NeuMorph: Neural Morphological Tagging for Low-Resource Languages - An Experimental Study for Indic Languages" - ABHISEK CHAKRABARTY, AKSHAY CHATURVEDI, UTPAL GARAIN. DOI.https://10.1145/3342354
+"NeuMorph: Neural Morphological Tagging for Low-Resource Languages - An Experimental Study for Indic Languages" - ABHISEK CHAKRABARTY, AKSHAY CHATURVEDI, UTPAL GARAIN. DOI. https://doi.org/10.1145/3342354
